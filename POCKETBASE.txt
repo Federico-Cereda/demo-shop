@@ -1,0 +1,7 @@
+POCKET BASE:
+
+user: info@fake.com
+pass: 1234567890
+
+Da Prompt, nella cartella server:
+pocketbase.exe serve

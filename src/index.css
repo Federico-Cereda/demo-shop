@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  @apply bg-gradient-to-tl from-slate-900 to-blue-500 text-white bg-fixed h-full
+}
+
+.page {
+  @apply pt-24 max-w-4xl mx-auto px-3
+}
+
+.title {
+  @apply text-3xl font-bold underline
+}
+
+.panel {
+  @apply bg-slate-200 p-3 sm:bg-red-200
+}
+
+.btn {
+  @apply px-5 py-2 rounded-full m-1 font-bold text-sm disabled:opacity-30 disabled:pointer-events-none transition
+}
+
+.btn.dark {
+  @apply bg-slate-700 hover:bg-slate-900 text-white
+}
+
+.btn.danger {
+  @apply bg-red-400 hover:bg-red-500 text-white
+}
+
+.btn.primary {
+  @apply bg-white hover:bg-sky-200 text-black
+}
+
+.btn.accent {
+  @apply bg-pink-500 hover:bg-pink-600 text-white
+}
+
+.btn.success {
+  @apply bg-green-500 hover:bg-green-600 text-white
+}
+
+.btn.outline {
+  @apply border border-white;
+}
+
+.btn.lg {
+  @apply text-2xl
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="password"]  
+{
+  @apply border-2 border-black rounded-xl p-1 text-black
+}
